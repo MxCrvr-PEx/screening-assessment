@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1rem;
+}
+
+/* Universal */
+main {
+    padding: 1rem 4rem;
+}
+
+h1 {
+    font-size: 5rem;
+    padding: 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+}
+
+p, label, li {
+    font-weight: 200;
+}
+
+li {
+    list-style-position: inside;
+}
+
+ol, li {
+    font-weight: 400;
+}
+
+.context {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.context p {
+    margin-bottom: 1.5rem;
+}
+
+.question {
+   /* display: grid;
+   grid-template-columns: repeat(2, 1fr); */
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-bottom: #000 1px solid;
+   border-left: #000 1px solid;
+}
+.question p {
+    margin: 1rem 0 1rem 1rem;
+}
+
+.inputs {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    border-left: #000 1px solid;
+    /* margin-left: 25.04%; */
+}
+
+.question-list {
+    width: 100%;
+    border-top: #000 1px solid;
+    border-right: #000 1px solid;
+}
+
+.no {
+    border-left: #000 1px solid;
+    padding: 0 1.2rem;
+    text-align: center;
+}
+
+.yes {
+    padding: 0 1.2rem;
+    text-align: center;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    padding: 1rem 5rem;
+    margin: 2.5rem 0;
+    border-radius: 0.5rem;
+    background-color: #16161d;
+    color: #fff;
+    border: #16161d solid 1px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+.btn:hover {
+    background-color: #fff;
+    color: #16161d;
+    transform: scale(0.95);
+}
+
+.results-container {
+    background-color: #16161d;
+    color: #fff;
+    margin: 2rem auto;
+    padding: 1rem 6rem;
+    width: 75%;
+    display: none;
+    border-radius: 0.8rem;
+}
+
+.score {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1.8rem;
+}
+
+.scoring {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1.8rem;
+}
+
+
+.score-ratings {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+label {
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    cursor: pointer;
+}
+
+.validation {
+    color: #ff0000;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+.answer, .explanation {
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #ff0000;
+}
+
+.explanation {
+    color: #fff;
+    font-weight: 200;
+}

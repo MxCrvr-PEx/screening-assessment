@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADS</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Screening & Assessment</h1>
+        <h2>ADS (Alcohol Dependence Scale)</h2>
+        <h4>Developed by Harvey Skinner, 1982.</h4>
+
+        <div class="context">
+            <p>Carefully read each question and the possible answers provided. Answer each question by choosing ONE choice that is most true for you. The word "drinking" in a question refers to "Drinking of alcoholic beverages" over the past 12 months.</p>
+        </div>
+
+        <div class="questions-list" id="questions-list">
+            <div class="question-item">
+                <label for="q1" class="question">1. How much did you drink the last time you drank?</label>
+                <div class="inputs">
+                    <div class="flex">
+                        <label for="0">Enough to get high or less</label>
+                        <input type="radio" value="0" name="q1">
+                    </div>
+                    <div class="flex">
+                        <label for="1">Enough to get drunk</label>
+                        <input type="radio" value="1" name="q1">
+                    </div>
+                    <div class="flex">
+                        <label for="2">Enough to pass out</label>
+                        <input type="radio" value="2" name="q1">
+                    </div>    
+                </div>
+            </div>
+
+            <div class="question-item">
+                <label for="q2" class="question">2. Do you often have hangovers on Sunday or Monday mornings?</label>
+                <div class="inputs">
+                    <div class="flex">
+                        <label for="0">No</label>
+                        <input type="radio" value="0" name="q2">
+                    </div>
+                    <div class="flex">
+                        <label for="1">Yes</label>
+                        <input type="radio" value="1" name="q2">
+                    </div>    
+                </div>
+            </div>
+
+            <div class="question-item">
+                <label for="q3" class="question">3. Have you had the "shakes" when sobering up (hands tremble, shake inside)?</label>
+                <div class="inputs">
+                    <div class="flex">
+                        <label for="0">No</label>
+                        <input type="radio" value="0" name="q3">
+                    </div>
+                    <div class="flex">
+                        <label for="1">Sometimes</label>
+                        <input type="radio" value="1" name="q3">
+                    </div>
+                    <div class="flex">
+                        <label for="2">Often</label>
+                        <input type="radio" value="2" name="q3">
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-item">
+                <label for="q4" class="question">4. Do you get physcially sick (e.g., vomit, stomach cramps) as a result of drinking?</label>
+                <div class="inputs">
+                    <div class="flex">
+                        <label for="0">No</label>
+                        <input type="radio" value="0" name="q4">
+                    </div>
+                    <div class="flex">
+                        <label for="1">Sometimes</label>
+                        <input type="radio" value="1" name="q4">
+                    </div>
+                    <div class="flex">
+                        <label for="2">Almost every time I drink</label>
+                        <input type="radio" value="2" name="q4">
+                    </div>  
+                </div>
+            </div>
+
+            <div class="question-item">
+                <label for="q5" class="question">5. Do you get physcially sick (e.g., vomit, stomach cramps) as a result of drinking?</label>
+                <div class="inputs">
+                    <div class="flex">
+                        <label for="0">No</label>
+                        <input type="radio" value="0" name="q5">
+                    </div>
+                    <div class="flex">
+                        <label for="1">Sometimes</label>
+                        <input type="radio" value="1" name="q5">
+                    </div>
+                    <div class="flex">
+                        <label for="2">Almost every time I drink</label>
+                    <input type="radio" value="2" name="q5">
+                    </div>  
+                </div>
+            </div>
+
+            <div class="question-item">
+                <label for="q6" class="question">6. Have you had the "DTs" (delirium tremens) - that is, seen, felt or heard things not really there; felt very anxious, restless, and over excited?</label>
+                <div class="inputs">
+                    <div class="flex">
+                        <label for="0">No</label>
+                        <input type="radio" value="0" name="q6">
+                    </div>
+                    <div class="flex">
+                        <label for="1">Sometimes</label>
+                        <input type="radio" value="1" name="q6">
+                    </div>
+                    <div class="flex">
+                        <label for="2">Several times</label>
+                        <input type="radio" value="2" name="q6">
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="question-item">
+                <label for="q7" class="question">7. As a result of drinking, have you felt overly hot and sweaty (feverish)?</label>
+                <div class="inputs">
+                    <div class="flex">
+                        <label for="0">No</label>
+                        <input type="radio" value="0" name="q7">
+                    </div>
+                    <div class="flex">
+                        <label for="1">Sometimes</label>
+                        <input type="radio" value="1" name="q7">
+                    </div>
+                    <div class="flex">
+                        <label for="2">Several times</label>
+                        <input type="radio" value="2" name="q7">
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-item">
+                <label for="q8" class="question">8. As a result of drinking, have you seen things that were not really there?</label>
+                <div class="inputs">
+                    <div class="flex">
+                        <label for="0">No</label>
+                        <input type="radio" value="0" name="q8">
+                    </div>
+                    <div class="flex">
+                        <label for="1">Sometimes</label>
+                        <input type="radio" value="1" name="q8">
+                    </div>
+                    <div class="flex">
+                        <label for="2">Several times</label>
+                        <input type="radio" value="2" name="q8">
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-item">
+                <label for="q9" class="question">9. Do you panic because you fear you may not have a drink when you need it?</label>
+                <div class="inputs">
+                    <div class="flex">
+                        <label for="0">No</label>
+                        <input type="radio" value="0" name="q9">
+                    </div>
+                    <div class="flex">
+                        <label for="1">Yes</label>
+                        <input type="radio" value="1" name="q9">
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-item">
+                <label for="q10" class="question">10. Have you had blackouts("loss of memory" without passing out) as a result of drinking?</label>
+                <div class="inputs">
+                    <div class="flex">
+                        <label for="0">No, never</label>
+                        <input type="radio" value="0" name="q10">    
+                    </div>
+                    <div class="flex">
+                        <label for="1">Sometimes</label>
+                        <input type="radio" value="1" name="q10">
+                    </div>
+                    <div class="flex">
+                        <label for="2">Often</label>
+                        <input type="radio" value="2" name="q10">
+                    </div>
+                    <div class="flex">
+                        <label for="3">Almost every time I drink</label>
+                        <input type="radio" value="3" name="q10">
+                    </div> 
+                </div>
+            </div>
+
+            <div class="question-item">
+                <label for="q11" class="question">11. Do you carry a bottle with you or keep one close at hand?</label>
+                <div class="inputs">
+                    <div class="flex">
+                        <label for="0">No</label>
+                        <input type="radio" value="0" name="q11">
+                    </div>
+                    <div class="flex">
+                        <label for="1">Sometimes</label>
+                        <input type="radio" value="1" name="q11">
+                    </div>
+                    <div class="flex">
+                        <label for="2">Most of the time</label>
+                        <input type="radio" value="2" name="q11">
+                    </div> 
+                </div>
+            </div>
+
+            <div class="question-item">
+                <label for="q12" class="question">12. After a period of abstinence (not drinking), do you end up drinking heavily again?</label>
+                <div class="inputs">
+                    <div class="flex">
+                        <label for="0">No</label>
+                        <input type="radio" value="0" name="q12">
+                    </div>
+                    <div class="flex">
+                        <label for="1">Sometimes</label>
+                        <input type="radio" value="1" name="q12">
+                    </div>
+                    <div class="flex">
+                        <label for="2">Almost every time I drink</label>
+                        <input type="radio" value="2" name="q12">
+                    </div>    
+                </div>
+            </div>
+
+            <div class="question-item">
+                <label for="q13" class="question">13. In the passed 12 months, have you passed out as a result of drinking?</label>
+                <div class="inputs">
+                    <div class="flex">
+                        <label for="0">No</label>
+                        <input type="radio" value="0" name="q13">
+                    </div>
+                    <div class="flex">
+                        <label for="1">Once</label>
+                        <input type="radio" value="1" name="q13">
+                    </div>
+                    <div class="flex">
+                        <label for="2">More than once</label>
+                        <input type="radio" value="2" name="q13">
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-item">
+                <label for="q14" class="question">14. Have you had a convulsion (fit) following a period of drinking?</label>
+                <div class="inputs">
+                    <div class="flex">
+                        <label for="0">No</label>
+                        <input type="radio" value="0" name="q14">
+                    </div>
+                    <div class="flex">
+                        <label for="1">Yes</label>
+                        <input type="radio" value="1" name="q14">
+                    </div>
+                    <div class="flex">
+                        <label for="2">Several times</label>
+                        <input type="radio" value="2" name="q14">
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-item">
+                <label for="q15" class="question">15. Do you drink throughout the day?</label>
+                <div class="inputs">
+                    <div class="flex">
+                        <label for="0">No</label>
+                        <input type="radio" value="0" name="q15">
+                    </div>
+                    <div class="flex">
+                        <label for="1">Yes</label>
+                        <input type="radio" value="1" name="q15">
+                    </div>                    
+                </div>
+            </div>
+
+            <div class="question-item">
+                <label for="q16" class="question">16. After drinking heavily, has your thinking been fuzzy or unclear?</label>
+                <div class="inputs">
+                    <div class="flex">
+                        <label for="0">No</label>
+                        <input type="radio" value="0" name="q16">    
+                    </div>
+                    <div class="flex">
+                        <label for="1">Yes, but only for a few hours</label>
+                        <input type="radio" value="1" name="q16">    
+                    </div>
+                    <div class="flex">
+                        <label for="2">Yes, but only for one or two days</label>
+                        <input type="radio" value="2" name="q16">
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-item">
+                <label for="q17" class="question">17. As a result of drinking, have you felt your heart beating rapidly?</label>
+                <div class="inputs">
+                    <div class="flex">
+                        <label for="0">No</label>
+                        <input type="radio" value="0" name="q17">
+                    </div>
+                    <div class="flex">
+                        <label for="1">Yes</label>
+                        <input type="radio" value="1" name="q17">
+                    </div>
+                    <div class="flex">
+                        <label for="2">Several times</label>
+                        <input type="radio" value="2" name="q17">
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-item">
+                <label for="q18" class="question">18. Do you almost constantly think about drinking and alcohol?</label>
+                <div class="inputs">
+                    <div class="flex">
+                        <label for="0">No</label>
+                        <input type="radio" value="0" name="q18">
+                    </div>
+                    <div class="flex">
+                        <label for="1">Yes</label>
+                        <input type="radio" value="1" name="q18">
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-item">
+                <label for="q19" class="question">19. As a result of drinking, have you heard "things" that were not really there?</label>
+                <div class="inputs">
+                    <div class="flex">
+                        <label for="0">No</label>
+                        <input type="radio" value="0" name="q19">
+                    </div>
+                    <div class="flex">
+                        <label for="1">Yes</label>
+                        <input type="radio" value="1" name="q19">
+                    </div>
+                    <div class="flex">
+                        <label for="2">Several times</label>
+                        <input type="radio" value="2" name="q19">
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-item">
+                <label for="q20" class="question">20. Have you had weird and frightening sensations when drinking?</label>
+                <div class="inputs">
+                    <div class="flex">
+                        <label for="0">No</label>
+                        <input type="radio" value="0" name="q20">
+                    </div>
+                    <div class="flex">
+                        <label for="1">Once or twice</label>
+                        <input type="radio" value="1" name="q20">
+                    </div>
+                    <div class="flex">
+                        <label for="2">Often</label>
+                        <input type="radio" value="2" name="q20">
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-item">
+                <label for="q21" class="question">21. As a result of drinking have you "felt things" crawling on you that were not really there (e.g., bugs, spiders)?</label>
+                <div class="inputs">
+                    <div class="flex">
+                        <label for="0">No</label>
+                        <input type="radio" value="0" name="q21">
+                    </div>
+                    <div class="flex">
+                        <label for="1">Yes</label>
+                        <input type="radio" value="1" name="q21">
+                    </div>
+                    <div class="flex">
+                        <label for="2">Several times</label>
+                        <input type="radio" value="2" name="q21">
+                    </div> 
+                </div>
+            </div>
+
+            <div class="question-item">
+                <label for="q22" class="question">22. With respects to blackouts(loss of memory):</label>
+                <div class="inputs">
+                    <div class="flex">
+                        <label for="0">Have never had a blackout</label>
+                        <input type="radio" value="0" name="q22">
+                    </div>
+                    <div class="flex">
+                        <label for="1">Have had blackouts that last less than an hour</label>
+                        <input type="radio" value="1" name="q22">
+                    </div>
+                    <div class="flex">
+                        <label for="2">Have had blackouts that last for several hours</label>
+                        <input type="radio" value="2" name="q22">
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-item">
+                <label for="q23" class="question">23. Have your attempts to cut down drinking failed?</label>
+                <div class="inputs">
+                    <div class="flex">
+                        <label for="0">No</label>
+                        <input type="radio" value="0" name="q23">    
+                    </div>
+                    <div class="flex">
+                        <label for="1">Once</label>
+                        <input type="radio" value="1" name="q23">
+                    </div>
+                    <div class="flex">
+                        <label for="2">Several times</label>
+                        <input type="radio" value="2" name="q23">
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-item">
+                <label for="q24" class="question">24. Do you gulp drinks (drink quickly)?</label>
+                <div class="inputs">
+                    <div class="flex">
+                        <label for="0">No</label>
+                        <input type="radio" value="0" name="q24">
+                    </div>
+                   <div class="flex">
+                    	<label for="1">Yes</label>
+                        <input type="radio" value="1" name="q24">
+                   </div>
+                </div>
+            </div>
+
+            <div class="question-item">
+                <label for="q25" class="question">25. After taking one or two drinks, can you usually stop?</label>
+                <div class="inputs">
+                    <div class="flex">
+                        <label for="0">No</label>
+                        <input type="radio" value="0" name="q25">
+                    </div>
+                    <div class="flex">
+                        <label for="1">Yes</label>
+                        <input type="radio" value="1" name="q25">
+                    </div>   
+                </div>
+            </div>
+            <p class="validation" id="validation"></p>
+            <button id="submit">Submit</button>
+        </div>
+        <div class="result-box" id="result-box">
+            <p class="result" id="result"></p>
+        </div>
+
+
+    </main>
+    
+</body>
+</html>

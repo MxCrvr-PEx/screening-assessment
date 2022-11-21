@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "plus Jakarta Sans", sans-serif;
+}
+
+main {
+    padding: 1rem 4rem;
+}
+
+h1 {
+    font-size: 5rem;
+    padding: 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+}
+
+.context {
+    margin-bottom: 1rem;
+}
+
+.question-item {
+    margin: 1rem 0em;
+}
+
+.question {
+    background-color: #ccc;
+    width: 25%;
+    font-weight: 800;
+    border: 1px #000 solid;
+    padding: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.inputs {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+input[type="radio"] {
+    cursor: pointer;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    border-radius: 0.4rem;
+    padding: 0.5rem 3rem;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    text-transform: uppercase;
+}
